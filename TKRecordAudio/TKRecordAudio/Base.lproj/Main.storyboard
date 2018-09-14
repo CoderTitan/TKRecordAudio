@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TKRecordAudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZe-Th-Z0q">
+                                <rect key="frame" x="156" y="100" width="62" height="30"/>
+                                <state key="normal" title="开始录音"/>
+                                <connections>
+                                    <action selector="beginRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmS-bH-hLE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frX-7b-JJR">
+                                <rect key="frame" x="156" y="160" width="62" height="30"/>
+                                <state key="normal" title="结束录音"/>
+                                <connections>
+                                    <action selector="endRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNw-Cd-kvl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWs-kM-eu0">
+                                <rect key="frame" x="156" y="220" width="62" height="30"/>
+                                <state key="normal" title="删除录音"/>
+                                <connections>
+                                    <action selector="deleteRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Y8-dA-wra"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HP-Ga-b56">
+                                <rect key="frame" x="156" y="280" width="62" height="30"/>
+                                <state key="normal" title="播放录音"/>
+                                <connections>
+                                    <action selector="playRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3b-50-1SS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbZ-Kr-UZZ">
+                                <rect key="frame" x="156" y="351" width="62" height="30"/>
+                                <state key="normal" title="编辑音频"/>
+                                <connections>
+                                    <action selector="editAduio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jKO-RE-kup"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sbZ-Kr-UZZ" firstAttribute="top" secondItem="4HP-Ga-b56" secondAttribute="bottom" constant="41" id="0IJ-rm-jqg"/>
+                            <constraint firstItem="frX-7b-JJR" firstAttribute="centerX" secondItem="pZe-Th-Z0q" secondAttribute="centerX" id="4L8-ky-kwZ"/>
+                            <constraint firstItem="4HP-Ga-b56" firstAttribute="centerX" secondItem="SWs-kM-eu0" secondAttribute="centerX" id="7lD-XI-2bD"/>
+                            <constraint firstItem="frX-7b-JJR" firstAttribute="top" secondItem="pZe-Th-Z0q" secondAttribute="bottom" constant="30" id="E4p-eE-0uk"/>
+                            <constraint firstItem="pZe-Th-Z0q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Rz9-vd-p5k"/>
+                            <constraint firstItem="sbZ-Kr-UZZ" firstAttribute="centerX" secondItem="4HP-Ga-b56" secondAttribute="centerX" id="Ti0-nm-Lf1"/>
+                            <constraint firstItem="4HP-Ga-b56" firstAttribute="top" secondItem="SWs-kM-eu0" secondAttribute="bottom" constant="30" id="Uvh-D0-95a"/>
+                            <constraint firstItem="SWs-kM-eu0" firstAttribute="centerX" secondItem="frX-7b-JJR" secondAttribute="centerX" id="cdj-P7-zoG"/>
+                            <constraint firstItem="pZe-Th-Z0q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jqz-Dd-DZy"/>
+                            <constraint firstItem="SWs-kM-eu0" firstAttribute="top" secondItem="frX-7b-JJR" secondAttribute="bottom" constant="30" id="xpY-vM-rnM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77A1807E214B86F40034BA27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1807D214B86F40034BA27 /* AppDelegate.swift */; };
+		77A18080214B86F40034BA27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1807F214B86F40034BA27 /* ViewController.swift */; };
+		77A18083214B86F40034BA27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A18081214B86F40034BA27 /* Main.storyboard */; };
+		77A18085214B86F60034BA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A18084214B86F60034BA27 /* Assets.xcassets */; };
+		77A18088214B86F60034BA27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A18086214B86F60034BA27 /* LaunchScreen.storyboard */; };
+		77A18096214B8B2C0034BA27 /* TKAudioTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A18095214B8B2C0034BA27 /* TKAudioTool.swift */; };
+		77A18098214B98300034BA27 /* TKPlayAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A18097214B98300034BA27 /* TKPlayAudio.swift */; };
+		77A1809A214BA0D50034BA27 /* TKAudioFileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A18099214BA0D50034BA27 /* TKAudioFileTool.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77A1807A214B86F40034BA27 /* TKRecordAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKRecordAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A1807D214B86F40034BA27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77A1807F214B86F40034BA27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77A18082214B86F40034BA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77A18084214B86F60034BA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77A18087214B86F60034BA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77A18089214B86F60034BA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A18095214B8B2C0034BA27 /* TKAudioTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKAudioTool.swift; sourceTree = "<group>"; };
+		77A18097214B98300034BA27 /* TKPlayAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKPlayAudio.swift; sourceTree = "<group>"; };
+		77A18099214BA0D50034BA27 /* TKAudioFileTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKAudioFileTool.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77A18077214B86F40034BA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77A18071214B86F40034BA27 = {
+			isa = PBXGroup;
+			children = (
+				77A1807C214B86F40034BA27 /* TKRecordAudio */,
+				77A1807B214B86F40034BA27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77A1807B214B86F40034BA27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77A1807A214B86F40034BA27 /* TKRecordAudio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77A1807C214B86F40034BA27 /* TKRecordAudio */ = {
+			isa = PBXGroup;
+			children = (
+				77A18091214B88C70034BA27 /* RecordAudio */,
+				77A1807D214B86F40034BA27 /* AppDelegate.swift */,
+				77A1807F214B86F40034BA27 /* ViewController.swift */,
+				77A18081214B86F40034BA27 /* Main.storyboard */,
+				77A18084214B86F60034BA27 /* Assets.xcassets */,
+				77A18086214B86F60034BA27 /* LaunchScreen.storyboard */,
+				77A18089214B86F60034BA27 /* Info.plist */,
+			);
+			path = TKRecordAudio;
+			sourceTree = "<group>";
+		};
+		77A18091214B88C70034BA27 /* RecordAudio */ = {
+			isa = PBXGroup;
+			children = (
+				77A18092214B88C70034BA27 /* CutAddAudio(拼接剪裁) */,
+				77A18093214B88C70034BA27 /* CutDown(压缩) */,
+				77A18094214B88C70034BA27 /* Recirding(录音) */,
+			);
+			path = RecordAudio;
+			sourceTree = SOURCE_ROOT;
+		};
+		77A18092214B88C70034BA27 /* CutAddAudio(拼接剪裁) */ = {
+			isa = PBXGroup;
+			children = (
+				77A18099214BA0D50034BA27 /* TKAudioFileTool.swift */,
+			);
+			path = "CutAddAudio(拼接剪裁)";
+			sourceTree = "<group>";
+		};
+		77A18093214B88C70034BA27 /* CutDown(压缩) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CutDown(压缩)";
+			sourceTree = "<group>";
+		};
+		77A18094214B88C70034BA27 /* Recirding(录音) */ = {
+			isa = PBXGroup;
+			children = (
+				77A18095214B8B2C0034BA27 /* TKAudioTool.swift */,
+				77A18097214B98300034BA27 /* TKPlayAudio.swift */,
+			);
+			path = "Recirding(录音)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77A18079214B86F40034BA27 /* TKRecordAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A1808C214B86F60034BA27 /* Build configuration list for PBXNativeTarget "TKRecordAudio" */;
+			buildPhases = (
+				77A18076214B86F40034BA27 /* Sources */,
+				77A18077214B86F40034BA27 /* Frameworks */,
+				77A18078214B86F40034BA27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKRecordAudio;
+			productName = TKRecordAudio;
+			productReference = 77A1807A214B86F40034BA27 /* TKRecordAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77A18072214B86F40034BA27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = quanjunt;
+				TargetAttributes = {
+					77A18079214B86F40034BA27 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 77A18075214B86F40034BA27 /* Build configuration list for PBXProject "TKRecordAudio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77A18071214B86F40034BA27;
+			productRefGroup = 77A1807B214B86F40034BA27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77A18079214B86F40034BA27 /* TKRecordAudio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77A18078214B86F40034BA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A18088214B86F60034BA27 /* LaunchScreen.storyboard in Resources */,
+				77A18085214B86F60034BA27 /* Assets.xcassets in Resources */,
+				77A18083214B86F40034BA27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77A18076214B86F40034BA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A18080214B86F40034BA27 /* ViewController.swift in Sources */,
+				77A1807E214B86F40034BA27 /* AppDelegate.swift in Sources */,
+				77A18096214B8B2C0034BA27 /* TKAudioTool.swift in Sources */,
+				77A1809A214BA0D50034BA27 /* TKAudioFileTool.swift in Sources */,
+				77A18098214B98300034BA27 /* TKPlayAudio.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77A18081214B86F40034BA27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77A18082214B86F40034BA27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77A18086214B86F60034BA27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77A18087214B86F60034BA27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77A1808A214B86F60034BA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77A1808B214B86F60034BA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77A1808D214B86F60034BA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TKRecordAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quanjunt.www.TKRecordAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77A1808E214B86F60034BA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TKRecordAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quanjunt.www.TKRecordAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77A18075214B86F40034BA27 /* Build configuration list for PBXProject "TKRecordAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A1808A214B86F60034BA27 /* Debug */,
+				77A1808B214B86F60034BA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A1808C214B86F60034BA27 /* Build configuration list for PBXNativeTarget "TKRecordAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A1808D214B86F60034BA27 /* Debug */,
+				77A1808E214B86F60034BA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77A18072214B86F40034BA27 /* Project object */;
+}
